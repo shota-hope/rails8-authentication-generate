@@ -49,6 +49,7 @@ module Authentication
     end
 
     def terminate_session
+      debugger
       Current.session.destroy
       cookies.delete(:session_id)
     end
